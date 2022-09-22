@@ -9,7 +9,7 @@ public class Rules extends CountNeigbours  implements ActionListener {
         boolean[][] temp = new boolean[width][height];
 
 
-        for (int i = 1; i < width; i++) {
+        for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 int count = CountNeigbours(i,j);
                 if (boardFrame[i][j]) {
@@ -28,7 +28,7 @@ public class Rules extends CountNeigbours  implements ActionListener {
         }
         boardFrame = temp;
 
-        for (int i = 1; i < width; i++) {
+        for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 if (boardFrame[i][j]) {
                     cells[i][j].setBackground(Color.black);

@@ -4,8 +4,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Board extends JFrame {
-    int width = 50;
-    int height = 50;
+    int width;
+    int height;
     boolean boardFrame[][];
     JButton cells[][];
 
@@ -18,7 +18,7 @@ public class Board extends JFrame {
         cells = new JButton[width][height];
         setSize(500, 500);
         setLayout(new GridLayout(width, height));
-        for (int i = 1; i < width; i++) {
+        for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 boardFrame[i][j] = random.nextInt(100) < 30;
                 JButton cellsTemp = new JButton();
