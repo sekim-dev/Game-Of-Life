@@ -21,3 +21,10 @@ As regras das celulas:
 - 4.Qualquer célula viva com dois ou três vizinhos vivos continua no mesmo estado para a próxima geração.
 
 É importante entender que todos os nascimentos e mortes ocorrem simultaneamente. Juntos eles constituem uma geração ou, como podemos chamá-los, um "instante" na história da vida completa da configuração inicial.
+
+## O jogo é compilado diretamente no terminal
+- 1.Clicar em Run.
+- 2.Adicionar numero de coulas.
+- 3.Adicionar numero de linhas. 
+
+Então você verá o jogo da vida rodando em JFrame.
